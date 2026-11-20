@@ -24,6 +24,10 @@ dependencies {
 // The consumer tests write the contract the backend is verified against.
 tasks.test {
     useJUnitPlatform()
+    testLogging {
+        events("failed")
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+    }
     systemProperty("pact.rootDir", rootProject.file("contracts/pacts").absolutePath)
     outputs.dir(rootProject.file("contracts/pacts"))
 }

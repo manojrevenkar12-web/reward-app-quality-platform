@@ -37,6 +37,10 @@ dependencies {
 // The provider is verified against the contract the app's consumer tests wrote.
 tasks.test {
     useJUnitPlatform()
+    testLogging {
+        events("failed")
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+    }
     dependsOn(":api-client:test")
     inputs.dir(rootProject.file("contracts/pacts"))
     systemProperty("pact.verifier.publishResults", "false")
