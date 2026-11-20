@@ -1,0 +1,10 @@
+# Sign in, play a round, see the coins. Runs against the real backend on the host.
+appId: com.rewardapp
+---
+- launchApp:
+    clearState: true
+- tapOn: "Sign in"
+- assertVisible: "Signed in"
+- tapOn: "Play a round"
+- assertVisible: "250 coins"
+- assertVisible: "+250 coins"

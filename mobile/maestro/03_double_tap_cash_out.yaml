@@ -1,0 +1,20 @@
+# The money flow's worst case on a phone: an impatient double tap. One dollar out, not two.
+appId: com.rewardapp
+---
+- launchApp:
+    clearState: true
+- tapOn: "Sign in"
+- assertVisible: "Signed in"
+- repeat:
+    times: 6
+    commands:
+      - tapOn: "Play a round"
+      - waitForAnimationToEnd
+- assertVisible: "1500 coins"
+- tapOn:
+    text: "Cash out \\$1.00"
+    repeat: 2
+    delay: 50
+- assertVisible: "Cash-out requested: \\$1.00"
+- assertVisible: "500 coins"
+- assertNotVisible: "Something went wrong.*"

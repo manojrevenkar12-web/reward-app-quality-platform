@@ -1,0 +1,16 @@
+# Earn enough for a dollar and cash it out.
+appId: com.rewardapp
+---
+- launchApp:
+    clearState: true
+- tapOn: "Sign in"
+- assertVisible: "Signed in"
+- repeat:
+    times: 4
+    commands:
+      - tapOn: "Play a round"
+      - waitForAnimationToEnd
+- assertVisible: "1000 coins"
+- tapOn: "Cash out \\$1.00"
+- assertVisible: "Cash-out requested: \\$1.00"
+- assertVisible: "0 coins"

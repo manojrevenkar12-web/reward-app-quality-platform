@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Inter, system-ui, sans-serif" role="img" aria-label="Cost of quality per week">
+<rect width="800" height="420" fill="#FCFCFB"/>
+<text x="20" y="28" font-size="15" font-weight="600" fill="#1F2430">Cost of quality per week</text>
+<text x="20" y="46" font-size="12" fill="#5E6573">Lost player value, QA and engineering time, device farm; same releases and players for every design</text>
+<text x="330" y="77" font-size="12" text-anchor="end" fill="#1F2430">As found</text>
+<rect x="340" y="67" width="352.4" height="14" rx="3" fill="#C2410C"/>
+<text x="700.4" y="78" font-size="11" fill="#5E6573">€50,175 </text>
+<text x="330" y="103" font-size="12" text-anchor="end" fill="#1F2430">Automate everything</text>
+<rect x="340" y="93" width="333.7" height="14" rx="3" fill="#7C3AED"/>
+<text x="681.7" y="104" font-size="11" fill="#5E6573">€47,508 </text>
+<text x="330" y="129" font-size="12" text-anchor="end" fill="#1F2430">Platform, exploratory time by a fixed ranking, no learned risk</text>
+<rect x="340" y="119" width="22.0" height="14" rx="3" fill="#A3A9A6"/>
+<text x="370.0" y="130" font-size="11" fill="#5E6573">€3,135 </text>
+<text x="330" y="155" font-size="12" text-anchor="end" fill="#1F2430">Platform, the 7 most popular devices instead of a covering set</text>
+<rect x="340" y="145" width="22.2" height="14" rx="3" fill="#A3A9A6"/>
+<text x="370.2" y="156" font-size="11" fill="#5E6573">€3,158 </text>
+<text x="330" y="181" font-size="12" text-anchor="end" fill="#1F2430">Platform, tests in the US locale only</text>
+<rect x="340" y="171" width="22.0" height="14" rx="3" fill="#A3A9A6"/>
+<text x="370.0" y="182" font-size="11" fill="#5E6573">€3,137 </text>
+<text x="330" y="207" font-size="12" text-anchor="end" fill="#1F2430">Platform, no contract tests</text>
+<rect x="340" y="197" width="23.1" height="14" rx="3" fill="#A3A9A6"/>
+<text x="371.1" y="208" font-size="11" fill="#5E6573">€3,283 </text>
+<text x="330" y="233" font-size="12" text-anchor="end" fill="#1F2430">Platform, no coin-ledger checks</text>
+<rect x="340" y="223" width="24.9" height="14" rx="3" fill="#A3A9A6"/>
+<text x="372.9" y="234" font-size="11" fill="#5E6573">€3,543 </text>
+<text x="330" y="259" font-size="12" text-anchor="end" fill="#1F2430">Platform, no flaky-test quarantine</text>
+<rect x="340" y="249" width="21.2" height="14" rx="3" fill="#A3A9A6"/>
+<text x="369.2" y="260" font-size="11" fill="#5E6573">€3,018 </text>
+<text x="330" y="285" font-size="12" text-anchor="end" fill="#1F2430">Platform, no exploratory testing</text>
+<rect x="340" y="275" width="19.8" height="14" rx="3" fill="#A3A9A6"/>
+<text x="367.8" y="286" font-size="11" fill="#5E6573">€2,822 </text>
+<text x="330" y="311" font-size="12" text-anchor="end" fill="#1F2430">Platform, 20% then 100% with guardrails</text>
+<rect x="340" y="301" width="24.7" height="14" rx="3" fill="#A3A9A6"/>
+<text x="372.7" y="312" font-size="11" fill="#5E6573">€3,520 </text>
+<text x="330" y="337" font-size="12" text-anchor="end" fill="#1F2430">Platform, staged rollout but only the daily crash check</text>
+<rect x="340" y="327" width="27.6" height="14" rx="3" fill="#A3A9A6"/>
+<text x="375.6" y="338" font-size="11" fill="#5E6573">€3,925 </text>
+<text x="330" y="363" font-size="12" text-anchor="end" fill="#1F2430">Platform, support escalates tickets by hand</text>
+<rect x="340" y="353" width="38.3" height="14" rx="3" fill="#A3A9A6"/>
+<text x="386.3" y="364" font-size="11" fill="#5E6573">€5,448 </text>
+<text x="330" y="389" font-size="12" text-anchor="end" fill="#1F2430" font-weight="600">Platform</text>
+<rect x="340" y="379" width="20.9" height="14" rx="3" fill="#1D4ED8"/>
+<text x="368.9" y="390" font-size="11" fill="#5E6573">€2,969 </text>
+</svg>

@@ -1,0 +1,55 @@
+# The product as production knows it: flows and how many players use them, device classes and their share of
+# players, and which modules touch which flows. Both the world and the platform read this; it holds no hidden truth.
+# What players do each day, and whether a defect there costs money.
+flows:
+  login:          {usage: 0.35, money: false}
+  onboarding:     {usage: 0.03, money: false}
+  play_round:     {usage: 0.95, money: true}
+  offerwall:      {usage: 0.30, money: true}
+  cashout:        {usage: 0.08, money: true}
+  live_event:     {usage: 0.40, money: true}
+  notifications:  {usage: 0.60, money: false}
+  identity_check: {usage: 0.01, money: true}
+  settings:       {usage: 0.05, money: false}
+
+# Device classes and their share of players.
+devices:
+  - {name: galaxy_a_android14,   platform: android, oem: samsung,  os: a14, tier: low,  share: 0.15}
+  - {name: galaxy_s_android15,   platform: android, oem: samsung,  os: a15, tier: high, share: 0.10}
+  - {name: galaxy_a_android13,   platform: android, oem: samsung,  os: a13, tier: low,  share: 0.07}
+  - {name: redmi_android14,      platform: android, oem: xiaomi,   os: a14, tier: low,  share: 0.08}
+  - {name: redmi_android13,      platform: android, oem: xiaomi,   os: a13, tier: low,  share: 0.04}
+  - {name: moto_g_android14,     platform: android, oem: motorola, os: a14, tier: low,  share: 0.07}
+  - {name: moto_g_android12,     platform: android, oem: motorola, os: a12, tier: low,  share: 0.03}
+  - {name: pixel_android15,      platform: android, oem: google,   os: a15, tier: high, share: 0.05}
+  - {name: oppo_android14,       platform: android, oem: oppo,     os: a14, tier: low,  share: 0.04}
+  - {name: tcl_android13,        platform: android, oem: tcl,      os: a13, tier: low,  share: 0.03}
+  - {name: other_android12,      platform: android, oem: other,    os: a12, tier: low,  share: 0.04}
+  - {name: other_android15,      platform: android, oem: other,    os: a15, tier: high, share: 0.03}
+  - {name: iphone_ios18,         platform: ios,     oem: apple,    os: i18, tier: high, share: 0.17}
+  - {name: iphone_ios17,         platform: ios,     oem: apple,    os: i17, tier: high, share: 0.07}
+  - {name: iphone_se_ios17,      platform: ios,     oem: apple,    os: i17, tier: low,  share: 0.03}
+
+# The code base: each module touches some flows. Backend modules ship with the release but deploy separately.
+modules:
+  - {name: auth_ui,          side: app,     flows: [login, onboarding]}
+  - {name: onboarding_ui,    side: app,     flows: [onboarding]}
+  - {name: game_shell,       side: app,     flows: [play_round, live_event]}
+  - {name: game_sdk_bridge,  side: app,     flows: [play_round]}
+  - {name: coin_wallet_ui,   side: app,     flows: [play_round, cashout, offerwall]}
+  - {name: offerwall_ui,     side: app,     flows: [offerwall]}
+  - {name: cashout_ui,       side: app,     flows: [cashout, identity_check]}
+  - {name: event_ui,         side: app,     flows: [live_event]}
+  - {name: push_client,      side: app,     flows: [notifications]}
+  - {name: settings_ui,      side: app,     flows: [settings, notifications]}
+  - {name: ads_mediation,    side: app,     flows: [play_round, offerwall]}
+  - {name: face_check_sdk,   side: app,     flows: [identity_check, cashout]}
+  - {name: auth_api,         side: backend, flows: [login, onboarding]}
+  - {name: rewards_api,      side: backend, flows: [play_round, live_event]}
+  - {name: coin_ledger,      side: backend, flows: [play_round, offerwall, cashout, live_event]}
+  - {name: payout_service,   side: backend, flows: [cashout]}
+  - {name: offerwall_api,    side: backend, flows: [offerwall]}
+  - {name: event_scheduler,  side: backend, flows: [live_event, notifications]}
+  - {name: push_service,     side: backend, flows: [notifications]}
+  - {name: fraud_rules,      side: backend, flows: [cashout, identity_check]}
+

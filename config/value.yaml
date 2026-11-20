@@ -1,0 +1,15 @@
+# What outcomes cost, for the headline. Player costs are per player-day a defect reaches.
+# Revenue per daily player is about EUR 1.65 a day: NCSoft's 2026 forecast of USD 325M revenue over about 500k daily
+# players (README, sources). A defect costs the share of that day it spoils, plus money paid out wrongly.
+eur_per_affected_player_day:
+  crash: 0.50                # a third of the day's play lost
+  ui: 0.08
+  perf: 0.12
+  money_block: 0.60          # cash-out is why players play: lost trust, support contacts, churn
+  money_overpay: 0.45        # coins credited twice and redeemed
+  contract_break: 0.55
+qa_hour_eur: 55
+engineer_hour_eur: 75
+fix_before_release_engineer_hours: 2
+hotfix_engineer_hours: 6
+rollback_engineer_hours: 1.5

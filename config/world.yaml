@@ -1,0 +1,65 @@
+# The simulated rewarded-gaming app and its hidden truth. Only raq/world reads this file.
+seeds: [4101, 4102, 4103]
+weeks: 12
+releases_per_week: 2          # app releases (Android and iOS); backend changes ship with them
+
+players:
+  dau: 500000
+  regions: {US: 0.70, UK: 0.07, DE: 0.08, CA: 0.06, AU: 0.05, FR: 0.04}
+  update_curve: [0.35, 0.65, 0.82, 0.90, 0.94]   # share on a new version 1..5 days after it reaches 100%
+
+changes:
+  modules_per_release: [4, 10]
+  lines: [20, 900]                    # log-uniform lines changed per module
+  api_change_share: 0.25              # backend changes that touch the API the app calls
+  new_author_share: 0.2               # changed by someone new to the module
+  # P(defect) = sigmoid(intercept + coef . features + module effect + noise); the platform never sees this.
+  defect_model:
+    intercept: -2.6
+    log_lines: 0.55                   # per unit of log(lines/100)
+    new_author: 0.9
+    api_change: 1.1
+    recent_defects: 0.45              # per defect in this module in the last 8 releases
+    module_sd: 0.6
+    noise_sd: 0.5
+  kinds:
+    app:     {crash: 0.30, ui: 0.27, money_block: 0.15, money_overpay: 0.08, perf: 0.20}
+    backend: {money_block: 0.30, money_overpay: 0.25, ui: 0.10, perf: 0.20, contract_break: 0.15}
+  contract_break_if_api_change: 0.5   # an API change that is defective breaks old app versions this often
+  triggers: {all: 0.40, oem: 0.25, os: 0.20, tier: 0.15}
+  region_only_share: 0.15             # defect only in one non-US locale (formatting, currency, offers)
+
+# How good each kind of test is at finding each kind of defect, when it exercises the flow on a device that triggers it.
+tests:
+  manual:      {crash: 0.80, ui: 0.75, money_block: 0.70, money_overpay: 0.30, perf: 0.40, contract_break: 0.10}
+  e2e:         {crash: 0.85, ui: 0.45, money_block: 0.80, money_overpay: 0.35, perf: 0.25, contract_break: 0.05}
+  exploratory: {crash: 0.55, ui: 0.60, money_block: 0.55, money_overpay: 0.50, perf: 0.45, contract_break: 0.10}  # per 2 hours on the flow
+  contract:    {contract_break: 0.95, money_block: 0.25}
+  ledger:      {money_overpay: 0.85}
+  e2e_flaky_share: 0.08
+  e2e_flaky_rate: [0.03, 0.15]
+  e2e_new_flaky_per_week: 0.7
+
+# Production: what an escaped defect does, and what can be seen of it.
+production:
+  baseline_per_1k_player_days: {crash: 2.0, cashout_fail: 3.0, coins_anomaly: 1.0, tickets: 0.9}
+  excess_per_1k_affected_player_days:   # extra signal from players a defect reaches
+    crash:          {crash: 120}
+    money_block:    {cashout_fail: 400, tickets: 25}
+    money_overpay:  {coins_anomaly: 60, tickets: 0.4}
+    ui:             {tickets: 3}
+    perf:           {tickets: 2, crash: 8}
+    contract_break: {crash: 40, cashout_fail: 150, tickets: 20}
+  hotfix_hours: 26                    # app hotfix through store review
+  hotfix_adoption_hours: 18           # until most affected players have the fix
+  old_version_share: 0.3              # players on an app version older than the newest
+  undetected_cap_hours: 336           # a defect nobody finds is fixed by chance in a later release
+  backend_trigger_all: 0.8            # backend defects hit every device this often
+  backend_rollback_hours: 1.5
+  ticket_symptoms:
+    crash: crash
+    money_block: cashout_stuck
+    money_overpay: coins_wrong
+    ui: display_broken
+    perf: slow
+    contract_break: error

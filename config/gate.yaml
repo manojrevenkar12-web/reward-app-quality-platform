@@ -1,0 +1,7 @@
+# What the platform must show on the held-out orgs, against the org as found.
+platform:
+  max_player_days_share: 0.25      # player-days hit by escaped defects: at most a quarter
+  max_escaped_money_share: 0.4     # defects in coins or cash-outs reaching players: at most 40%
+  max_qa_hours_share: 1.0          # no more QA hours than the manual regression
+  max_lead_hours_median: 60        # code freeze to 100% of players
+  min_found_share: 0.6             # of all defects, found before release

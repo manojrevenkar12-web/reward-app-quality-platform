@@ -1,0 +1,39 @@
+# The platform's settings. The world never reads this file.
+team: {qa_engineers: 4, hours_per_day: 6}
+manual:
+  minutes_per_flow_device: 25
+  devices: 4                       # the four most popular device classes
+e2e:
+  tests_per_flow: 6
+  minutes_per_test: 1.5            # per device class
+  extra_locale_share: 0.3          # each extra locale reruns the money flows: about this share of the suite
+  device_minute_eur: 0.08
+  max_reruns: 2
+  investigate_hours: 0.5           # a red run that survives its reruns
+  glance_hours: 0.1                # a test that failed and then passed on retry: someone still looks
+  maintenance_hours_per_flow: 0.4  # updating tests for each flow an app change touches
+  maintenance_per_device: 0.04     # each device class in the matrix adds this share (layouts, permissions, OS quirks)
+  wall_hours: 1.5
+devices: 7                         # device classes in the platform's matrix
+locales: [US, DE, UK]
+exploratory_hours: 6
+exploratory_block_hours: 2
+risk:
+  prior: {intercept: -2.6, log_lines: 0.4, new_author: 0.5, api_change: 0.8, recent_found: 0.3, backend: 0.0}
+  min_rows: 40
+  l2: 1.0
+  recent_releases: 8
+contracts: {wall_hours: 0.2}
+rollout:
+  as_found: [[0.2, 24], [1.0, 0]]
+  staged: [[0.01, 12], [0.10, 12], [0.50, 12], [1.0, 0]]
+  backend_canary: [0.1, 2]
+  check_every_hours: 2
+  watch_hours: 168
+  alpha: 0.001
+  false_halt_hours: 6              # delay of a halt that turns out to be noise
+  false_halt_qa_hours: 1
+daily_crash_check: {hour_of_day: 9, min_crashes: 150}
+triage:
+  manual: {escalate_per_day: 15, delay_median_hours: 30, delay_sd: 0.6, repro_qa_hours: 3}
+  agent: {window_hours: 6, alpha: 0.001, min_count: 6, review_qa_hours: 0.5, max_read_per_hour: 120}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Inter, system-ui, sans-serif" role="img" aria-label="Player-days hit by escaped defects, per week">
+<rect width="800" height="420" fill="#FCFCFB"/>
+<text x="20" y="28" font-size="15" font-weight="600" fill="#1F2430">Player-days hit by escaped defects, per week</text>
+<text x="20" y="46" font-size="12" fill="#5E6573">Players a defect reached, times the days it reached them; 95% intervals over org-weeks</text>
+<text x="330" y="77" font-size="12" text-anchor="end" fill="#1F2430">As found</text>
+<rect x="340" y="67" width="195.1" height="14" rx="3" fill="#C2410C"/>
+<line x1="443.4" x2="632.8" y1="74" y2="74" stroke="#1F2430" stroke-width="1.5"/>
+<text x="640.8" y="78" font-size="11" fill="#5E6573">124,973 </text>
+<text x="330" y="103" font-size="12" text-anchor="end" fill="#1F2430">Automate everything</text>
+<rect x="340" y="93" width="237.6" height="14" rx="3" fill="#7C3AED"/>
+<line x1="478.2" x2="692.4" y1="100" y2="100" stroke="#1F2430" stroke-width="1.5"/>
+<text x="700.4" y="104" font-size="11" fill="#5E6573">152,174 </text>
+<text x="330" y="129" font-size="12" text-anchor="end" fill="#1F2430">Platform, exploratory time by a fixed ranking, no learned risk</text>
+<rect x="340" y="119" width="18.1" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="349.8" x2="367.9" y1="126" y2="126" stroke="#1F2430" stroke-width="1.5"/>
+<text x="375.9" y="130" font-size="11" fill="#5E6573">11,626 </text>
+<text x="330" y="155" font-size="12" text-anchor="end" fill="#1F2430">Platform, the 7 most popular devices instead of a covering set</text>
+<rect x="340" y="145" width="18.3" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="349.4" x2="368.2" y1="152" y2="152" stroke="#1F2430" stroke-width="1.5"/>
+<text x="376.2" y="156" font-size="11" fill="#5E6573">11,728 </text>
+<text x="330" y="181" font-size="12" text-anchor="end" fill="#1F2430">Platform, tests in the US locale only</text>
+<rect x="340" y="171" width="16.7" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="348.7" x2="365.7" y1="178" y2="178" stroke="#1F2430" stroke-width="1.5"/>
+<text x="373.7" y="182" font-size="11" fill="#5E6573">10,697 </text>
+<text x="330" y="207" font-size="12" text-anchor="end" fill="#1F2430">Platform, no contract tests</text>
+<rect x="340" y="197" width="17.0" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="349.1" x2="365.8" y1="204" y2="204" stroke="#1F2430" stroke-width="1.5"/>
+<text x="373.8" y="208" font-size="11" fill="#5E6573">10,878 </text>
+<text x="330" y="233" font-size="12" text-anchor="end" fill="#1F2430">Platform, no coin-ledger checks</text>
+<rect x="340" y="223" width="18.0" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="349.6" x2="367.2" y1="230" y2="230" stroke="#1F2430" stroke-width="1.5"/>
+<text x="375.2" y="234" font-size="11" fill="#5E6573">11,521 </text>
+<text x="330" y="259" font-size="12" text-anchor="end" fill="#1F2430">Platform, no flaky-test quarantine</text>
+<rect x="340" y="249" width="16.1" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="348.3" x2="365.0" y1="256" y2="256" stroke="#1F2430" stroke-width="1.5"/>
+<text x="373.0" y="260" font-size="11" fill="#5E6573">10,315 </text>
+<text x="330" y="285" font-size="12" text-anchor="end" fill="#1F2430">Platform, no exploratory testing</text>
+<rect x="340" y="275" width="22.6" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="353.0" x2="373.5" y1="282" y2="282" stroke="#1F2430" stroke-width="1.5"/>
+<text x="381.5" y="286" font-size="11" fill="#5E6573">14,474 </text>
+<text x="330" y="311" font-size="12" text-anchor="end" fill="#1F2430">Platform, 20% then 100% with guardrails</text>
+<rect x="340" y="301" width="21.6" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="350.1" x2="375.3" y1="308" y2="308" stroke="#1F2430" stroke-width="1.5"/>
+<text x="383.3" y="312" font-size="11" fill="#5E6573">13,819 </text>
+<text x="330" y="337" font-size="12" text-anchor="end" fill="#1F2430">Platform, staged rollout but only the daily crash check</text>
+<rect x="340" y="327" width="21.8" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="351.6" x2="373.2" y1="334" y2="334" stroke="#1F2430" stroke-width="1.5"/>
+<text x="381.2" y="338" font-size="11" fill="#5E6573">13,935 </text>
+<text x="330" y="363" font-size="12" text-anchor="end" fill="#1F2430">Platform, support escalates tickets by hand</text>
+<rect x="340" y="353" width="61.6" height="14" rx="3" fill="#A3A9A6"/>
+<line x1="355.4" x2="469.2" y1="360" y2="360" stroke="#1F2430" stroke-width="1.5"/>
+<text x="477.2" y="364" font-size="11" fill="#5E6573">39,460 </text>
+<text x="330" y="389" font-size="12" text-anchor="end" fill="#1F2430" font-weight="600">Platform</text>
+<rect x="340" y="379" width="16.1" height="14" rx="3" fill="#1D4ED8"/>
+<line x1="348.3" x2="365.0" y1="386" y2="386" stroke="#1F2430" stroke-width="1.5"/>
+<text x="373.0" y="390" font-size="11" fill="#5E6573">10,315 </text>
+</svg>
