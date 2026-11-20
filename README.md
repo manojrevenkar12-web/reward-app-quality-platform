@@ -69,6 +69,29 @@ every design.
 | Platform, support escalates tickets by hand | 62 of 83 | 5 | 39,460 | 18.3 | 43.7 | €5,448 |
 | **Platform** | 62 of 83 | 5 | 10,315 | 18.0 | 43.7 | €2,969 |
 
+### Held-out orgs (run once)
+
+| Held-out | Platform | Automate everything | As found |
+|---|---:|---:|---:|
+| Defects found before release | **69 of 91** | 36 of 91 | 30 of 91 |
+| Defects in coins or cash-outs that reached players | **3** | 26 | 29 |
+| Player-days hit by escaped defects, per week (95% interval) | **12,281 (5,129–21,168)** | 220,046 (128,637–330,183) | 161,520 (79,301–264,335) |
+| ... of them in money flows | **117** | 164,337 | 121,669 |
+| Median hours to find an escaped defect | **35.5** | 48.8 | 42.0 |
+| Escaped defects nobody found within two weeks | **7** | 11 | 13 |
+| QA hours per week | **17.8** | 12.5 | 32.8 |
+| Flaky test failures per week | **0.9** | 27.2 | 0.0 |
+| Device farm per week | **€145** | €194 | €0 |
+| Median hours from code freeze to every player | **43.7** | 25.5 | 39.0 |
+| Rollouts halted by a guardrail (false halts) | **5 (0)** | 0 (0) | 0 (0) |
+| Cost of quality per week | **€3,028** | €88,956 | €70,947 |
+
+3 simulated orgs, 12 weeks each, 500,000 daily players: 72 releases, 511 module changes, 91 defects.
+
+Gate (`config/gate.yaml`) on the held-out orgs: **passed**.
+
+The record of that run: [docs/heldout.md](docs/heldout.md).
+
 <!-- results:end -->
 
 ## What is real and what is simulated

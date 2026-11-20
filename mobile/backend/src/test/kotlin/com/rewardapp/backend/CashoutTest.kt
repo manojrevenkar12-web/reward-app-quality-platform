@@ -7,7 +7,7 @@ import io.ktor.client.request.setBody
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.HttpStatusCode
-import io.ktor.http.contentType
+import io.ktor.http.content.TextContent
 import io.ktor.server.testing.testApplication
 import java.util.concurrent.Callable
 import java.util.concurrent.Executors
@@ -18,16 +18,20 @@ import kotlin.test.assertTrue
 class CashoutTest {
     private val body = """{"amountCents":100,"method":"paypal"}"""
 
+    private fun json(text: String) = TextContent(text, ContentType.Application.Json)
+
     @Test
     fun `a retried cash-out pays once`() = testApplication {
         val store = Store()
         application { module(store) }
         val id = store.newPlayer(coins = 1200)
         val first = client.post("/v1/players/$id/cashouts") {
-            header("Idempotency-Key", "k1"); contentType(ContentType.Application.Json); setBody(body)
+            header("Idempotency-Key", "k1")
+            setBody(json(body))
         }
         val again = client.post("/v1/players/$id/cashouts") {
-            header("Idempotency-Key", "k1"); contentType(ContentType.Application.Json); setBody(body)
+            header("Idempotency-Key", "k1")
+            setBody(json(body))
         }
         assertEquals(HttpStatusCode.Created, first.status)
         assertEquals(HttpStatusCode.OK, again.status)
@@ -55,9 +59,10 @@ class CashoutTest {
         application { module(store) }
         val id = store.newPlayer(coins = 200)
         val poor = client.post("/v1/players/$id/cashouts") {
-            header("Idempotency-Key", "k2"); contentType(ContentType.Application.Json); setBody(body)
+            header("Idempotency-Key", "k2")
+            setBody(json(body))
         }
-        val keyless = client.post("/v1/players/$id/cashouts") { contentType(ContentType.Application.Json); setBody(body) }
+        val keyless = client.post("/v1/players/$id/cashouts") { setBody(json(body)) }
         assertEquals(HttpStatusCode.Conflict, poor.status)
         assertEquals(HttpStatusCode.BadRequest, keyless.status)
         assertEquals(200L, store.coins(id))
@@ -69,7 +74,7 @@ class CashoutTest {
         application { module(store) }
         val id = store.newPlayer()
         repeat(5) {
-            client.post("/v1/players/$id/rounds") { contentType(ContentType.Application.Json); setBody("""{"gameId":"puzzle"}""") }
+            client.post("/v1/players/$id/rounds") { setBody(json("""{"gameId":"puzzle"}""")) }
         }
         assertEquals(1250L, store.coins(id))
         assertTrue(client.get("/v1/ledger/check").bodyAsText().contains("true"))

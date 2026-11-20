@@ -1,0 +1,590 @@
+{
+ "designs": {
+  "as_found": {
+   "channels": {
+    "crash_report": 21,
+    "none": 13,
+    "support": 27
+   },
+   "cost_eur_per_week": 70947.33271832748,
+   "cost_vs_as_found_ci": [
+    0.0,
+    0.0
+   ],
+   "defects": 91,
+   "detect_hours_median": 41.966716456699885,
+   "device_eur_per_week": 0.0,
+   "devices_tested": 4.0,
+   "eng_hours_per_week": 6.541666666666667,
+   "escaped": 61,
+   "escaped_money": 29,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.0,
+   "found_before_release": 30,
+   "found_share": 0.32967032967032966,
+   "halts": 0,
+   "label": "As found: manual regression on 4 devices, 20% then 100%, daily crash check, support escalates",
+   "lead_hours_median": 39.0,
+   "lead_hours_p90": 39.0,
+   "money_player_days_per_week": 121669.36913602188,
+   "player_days_ci": [
+    79300.74603151131,
+    264334.6058658517
+   ],
+   "player_days_per_week": 161519.9856328384,
+   "player_days_vs_as_found_ci": [
+    0.0,
+    0.0
+   ],
+   "player_eur_per_week": 68650.87438499415,
+   "qa_hours_per_week": 32.833333333333336,
+   "quarantined": 0,
+   "reader_accuracy": null,
+   "reds_per_week": 0.0,
+   "tickets": 34665,
+   "undetected": 13
+  },
+  "automate_everything": {
+   "channels": {
+    "crash_report": 14,
+    "none": 11,
+    "support": 30
+   },
+   "cost_eur_per_week": 88956.27780783265,
+   "cost_vs_as_found_ci": [
+    -16106.715373714449,
+    57903.187892619
+   ],
+   "defects": 91,
+   "detect_hours_median": 48.77196856970902,
+   "device_eur_per_week": 194.39999999999998,
+   "devices_tested": 15.0,
+   "eng_hours_per_week": 6.208333333333333,
+   "escaped": 55,
+   "escaped_money": 26,
+   "false_halts": 0,
+   "flaky_failures_per_week": 27.22222222222222,
+   "found_before_release": 36,
+   "found_share": 0.3956043956043956,
+   "halts": 0,
+   "label": "Automate everything: every E2E test on all 15 device classes, as-found rollout and triage",
+   "lead_hours_median": 25.5,
+   "lead_hours_p90": 26.0,
+   "money_player_days_per_week": 164337.2320477865,
+   "player_days_ci": [
+    128636.56241338742,
+    330182.55560637853
+   ],
+   "player_days_per_week": 220046.29287126058,
+   "player_days_vs_as_found_ci": [
+    -4775.739587614442,
+    137651.13479651944
+   ],
+   "player_eur_per_week": 87607.6833633882,
+   "qa_hours_per_week": 12.519444444444446,
+   "quarantined": 0,
+   "reader_accuracy": null,
+   "reds_per_week": 0.3055555555555556,
+   "tickets": 32196,
+   "undetected": 11
+  },
+  "platform": {
+   "channels": {
+    "guardrail": 6,
+    "none": 7,
+    "ticket_agent": 9
+   },
+   "cost_eur_per_week": 3028.3184033179,
+   "cost_vs_as_found_ci": [
+    -117064.14414398046,
+    -28040.5254081335
+   ],
+   "defects": 91,
+   "detect_hours_median": 35.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 5,
+   "label": "Platform: risk-based testing on a covering device matrix, contracts, ledger checks, staged rollout with guardrails, ticket agent",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 116.5955825617284,
+   "player_days_ci": [
+    5128.643629665794,
+    21167.503076135694
+   ],
+   "player_days_per_week": 12281.410888069053,
+   "player_days_vs_as_found_ci": [
+    -251704.69973504767,
+    -68735.2621698491
+   ],
+   "player_eur_per_week": 1457.8108477623443,
+   "qa_hours_per_week": 17.790555555555557,
+   "quarantined": 8,
+   "reader_accuracy": 0.7728459530026109,
+   "reds_per_week": 0.0,
+   "tickets": 383,
+   "undetected": 7
+  },
+  "platform_no_contracts": {
+   "channels": {
+    "guardrail": 17,
+    "none": 7,
+    "ticket_agent": 11
+   },
+   "cost_eur_per_week": 3423.9690977623445,
+   "cost_vs_as_found_ci": [
+    -116491.75100161936,
+    -27696.916435907307
+   ],
+   "defects": 91,
+   "detect_hours_median": 5.0,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.777777777777778,
+   "escaped": 35,
+   "escaped_money": 16,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 56,
+   "found_share": 0.6153846153846154,
+   "halts": 5,
+   "label": "Platform, no contract tests",
+   "lead_hours_median": 43.5,
+   "lead_hours_p90": 43.5,
+   "money_player_days_per_week": 822.6187307098766,
+   "player_days_ci": [
+    5832.418938934697,
+    21825.243029314952
+   ],
+   "player_days_per_week": 12987.4340362172,
+   "player_days_vs_as_found_ci": [
+    -250607.20941783107,
+    -68203.14538138143
+   ],
+   "player_eur_per_week": 1848.6698755401221,
+   "qa_hours_per_week": 18.12388888888889,
+   "quarantined": 8,
+   "reader_accuracy": 0.7547495682210709,
+   "reds_per_week": 0.0,
+   "tickets": 579,
+   "undetected": 7
+  },
+  "platform_no_exploratory": {
+   "channels": {
+    "guardrail": 10,
+    "none": 8,
+    "ticket_agent": 13
+   },
+   "cost_eur_per_week": 3086.160320129243,
+   "cost_vs_as_found_ci": [
+    -116723.95686055502,
+    -27767.512056611104
+   ],
+   "defects": 91,
+   "detect_hours_median": 33.0,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 6.541666666666667,
+   "escaped": 31,
+   "escaped_money": 4,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 60,
+   "found_share": 0.6593406593406593,
+   "halts": 7,
+   "label": "Platform, no exploratory testing",
+   "lead_hours_median": 37.7,
+   "lead_hours_p90": 37.7,
+   "money_player_days_per_week": 128.1407214506173,
+   "player_days_ci": [
+    9817.157834382235,
+    27012.30689849778
+   ],
+   "player_days_per_week": 17857.938194444443,
+   "player_days_vs_as_found_ci": [
+    -245413.92099707536,
+    -62394.05542669541
+   ],
+   "player_eur_per_week": 2122.7360979070204,
+   "qa_hours_per_week": 5.9572222222222235,
+   "quarantined": 8,
+   "reader_accuracy": 0.7540453074433657,
+   "reds_per_week": 0.0,
+   "tickets": 618,
+   "undetected": 8
+  },
+  "platform_no_guardrails": {
+   "channels": {
+    "crash_report": 1,
+    "none": 7,
+    "ticket_agent": 14
+   },
+   "cost_eur_per_week": 5205.464851523919,
+   "cost_vs_as_found_ci": [
+    -113173.23828727918,
+    -27126.911777126155
+   ],
+   "defects": 91,
+   "detect_hours_median": 38.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 0,
+   "label": "Platform, staged rollout but only the daily crash check",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 4239.087070794752,
+   "player_days_ci": [
+    7012.063245261857,
+    30244.122591724514
+   ],
+   "player_days_per_week": 17416.449757667822,
+   "player_days_vs_as_found_ci": [
+    -241678.44092739507,
+    -67290.77965894649
+   ],
+   "player_eur_per_week": 3638.776740412807,
+   "qa_hours_per_week": 17.721111111111114,
+   "quarantined": 8,
+   "reader_accuracy": 0.75,
+   "reds_per_week": 0.0,
+   "tickets": 504,
+   "undetected": 7
+  },
+  "platform_no_ledger": {
+   "channels": {
+    "guardrail": 8,
+    "none": 7,
+    "ticket_agent": 9
+   },
+   "cost_eur_per_week": 3105.9572922067887,
+   "cost_vs_as_found_ci": [
+    -117043.43407453601,
+    -28030.301449800165
+   ],
+   "defects": 91,
+   "detect_hours_median": 27.0,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.930555555555555,
+   "escaped": 24,
+   "escaped_money": 5,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 67,
+   "found_share": 0.7362637362637363,
+   "halts": 5,
+   "label": "Platform, no coin-ledger checks",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 286.9659529320988,
+   "player_days_ci": [
+    5223.6364107470035,
+    21304.487637532548
+   ],
+   "player_days_per_week": 12451.781258439423,
+   "player_days_vs_as_found_ci": [
+    -251678.77380912175,
+    -68690.46628963278
+   ],
+   "player_eur_per_week": 1534.477514429011,
+   "qa_hours_per_week": 17.846111111111114,
+   "quarantined": 8,
+   "reader_accuracy": 0.772609819121447,
+   "reds_per_week": 0.0,
+   "tickets": 387,
+   "undetected": 7
+  },
+  "platform_no_quarantine": {
+   "channels": {
+    "guardrail": 6,
+    "none": 7,
+    "ticket_agent": 9
+   },
+   "cost_eur_per_week": 3094.0128477623443,
+   "cost_vs_as_found_ci": [
+    -116990.57400509156,
+    -27975.002838689055
+   ],
+   "defects": 91,
+   "detect_hours_median": 35.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 12.333333333333334,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 5,
+   "label": "Platform, no flaky-test quarantine",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 116.5955825617284,
+   "player_days_ci": [
+    5128.643629665794,
+    21167.503076135694
+   ],
+   "player_days_per_week": 12281.410888069053,
+   "player_days_vs_as_found_ci": [
+    -251704.69973504767,
+    -68735.2621698491
+   ],
+   "player_eur_per_week": 1457.8108477623443,
+   "qa_hours_per_week": 18.985,
+   "quarantined": 0,
+   "reader_accuracy": 0.7728459530026109,
+   "reds_per_week": 0.1111111111111111,
+   "tickets": 383,
+   "undetected": 7
+  },
+  "platform_no_staged_rollout": {
+   "channels": {
+    "guardrail": 6,
+    "none": 7,
+    "ticket_agent": 9
+   },
+   "cost_eur_per_week": 3054.7873915895043,
+   "cost_vs_as_found_ci": [
+    -116796.62001456616,
+    -27913.431391186492
+   ],
+   "defects": 91,
+   "detect_hours_median": 27.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 5,
+   "label": "Platform, 20% then 100% with guardrails",
+   "lead_hours_median": 31.7,
+   "lead_hours_p90": 31.7,
+   "money_player_days_per_week": 228.7880979938271,
+   "player_days_ci": [
+    4645.6338047357185,
+    18789.94246358988
+   ],
+   "player_days_per_week": 10803.484037422833,
+   "player_days_vs_as_found_ci": [
+    -253291.87074987142,
+    -70175.05002292574
+   ],
+   "player_eur_per_week": 1484.2798360339489,
+   "qa_hours_per_week": 17.790555555555557,
+   "quarantined": 8,
+   "reader_accuracy": 0.7533333333333333,
+   "reds_per_week": 0.0,
+   "tickets": 450,
+   "undetected": 7
+  },
+  "platform_no_ticket_agent": {
+   "channels": {
+    "crash_report": 1,
+    "guardrail": 6,
+    "none": 7,
+    "support": 8
+   },
+   "cost_eur_per_week": 4781.1703578758625,
+   "cost_vs_as_found_ci": [
+    -115704.73850903513,
+    -26499.739430101992
+   ],
+   "defects": 91,
+   "detect_hours_median": 57.06620331924411,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 4,
+   "label": "Platform, support escalates tickets by hand",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 116.5955825617284,
+   "player_days_ci": [
+    10298.612299880491,
+    61026.81127496586
+   ],
+   "player_days_per_week": 32987.85654493757,
+   "player_days_vs_as_found_ci": [
+    -233657.2331724198,
+    -45722.42737422353
+   ],
+   "player_eur_per_week": 3179.3433578758622,
+   "qa_hours_per_week": 18.36,
+   "quarantined": 8,
+   "reader_accuracy": null,
+   "reds_per_week": 0.0,
+   "tickets": 1875,
+   "undetected": 7
+  },
+  "platform_static_risk": {
+   "channels": {
+    "guardrail": 6,
+    "none": 7,
+    "ticket_agent": 9
+   },
+   "cost_eur_per_week": 3028.3184033179,
+   "cost_vs_as_found_ci": [
+    -117064.14414398046,
+    -28040.5254081335
+   ],
+   "defects": 91,
+   "detect_hours_median": 35.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.958333333333333,
+   "escaped": 22,
+   "escaped_money": 3,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 69,
+   "found_share": 0.7582417582417582,
+   "halts": 5,
+   "label": "Platform, exploratory time by a fixed ranking, no learned risk",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 116.5955825617284,
+   "player_days_ci": [
+    5128.643629665794,
+    21167.503076135694
+   ],
+   "player_days_per_week": 12281.410888069053,
+   "player_days_vs_as_found_ci": [
+    -251704.69973504767,
+    -68735.2621698491
+   ],
+   "player_eur_per_week": 1457.8108477623443,
+   "qa_hours_per_week": 17.790555555555557,
+   "quarantined": 8,
+   "reader_accuracy": 0.7728459530026109,
+   "reds_per_week": 0.0,
+   "tickets": 383,
+   "undetected": 7
+  },
+  "platform_top_devices": {
+   "channels": {
+    "guardrail": 9,
+    "none": 8,
+    "ticket_agent": 10
+   },
+   "cost_eur_per_week": 3305.1993307484554,
+   "cost_vs_as_found_ci": [
+    -116617.71453076671,
+    -27643.20191604231
+   ],
+   "defects": 91,
+   "detect_hours_median": 35.5,
+   "device_eur_per_week": 145.15200000000002,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 6.347222222222222,
+   "escaped": 27,
+   "escaped_money": 4,
+   "false_halts": 0,
+   "flaky_failures_per_week": 1.0277777777777777,
+   "found_before_release": 64,
+   "found_share": 0.7032967032967034,
+   "halts": 8,
+   "label": "Platform, the 7 most popular devices instead of a covering set",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 125.71573591820986,
+   "player_days_ci": [
+    6450.536017801168,
+    23156.20698213854
+   ],
+   "player_days_per_week": 14177.203194203314,
+   "player_days_vs_as_found_ci": [
+    -249130.84065300177,
+    -67540.1139460684
+   ],
+   "player_eur_per_week": 1698.9556640817889,
+   "qa_hours_per_week": 17.91,
+   "quarantined": 8,
+   "reader_accuracy": 0.7644539614561028,
+   "reds_per_week": 0.027777777777777776,
+   "tickets": 467,
+   "undetected": 8
+  },
+  "platform_us_only": {
+   "channels": {
+    "guardrail": 7,
+    "none": 10,
+    "ticket_agent": 12
+   },
+   "cost_eur_per_week": 3587.0921563560946,
+   "cost_vs_as_found_ci": [
+    -116149.58661730892,
+    -27376.199780554965
+   ],
+   "defects": 91,
+   "detect_hours_median": 35.5,
+   "device_eur_per_week": 90.71999999999997,
+   "devices_tested": 7.0,
+   "eng_hours_per_week": 5.986111111111111,
+   "escaped": 29,
+   "escaped_money": 4,
+   "false_halts": 0,
+   "flaky_failures_per_week": 0.9444444444444444,
+   "found_before_release": 62,
+   "found_share": 0.6813186813186813,
+   "halts": 5,
+   "label": "Platform, tests in the US locale only",
+   "lead_hours_median": 43.7,
+   "lead_hours_p90": 43.7,
+   "money_player_days_per_week": 146.41039737654324,
+   "player_days_ci": [
+    8761.47894160518,
+    27123.62623462214
+   ],
+   "player_days_per_week": 17331.28403501157,
+   "player_days_vs_as_found_ci": [
+    -244350.69014745246,
+    -64331.33932098914
+   ],
+   "player_eur_per_week": 2065.113823022761,
+   "qa_hours_per_week": 17.86,
+   "quarantined": 8,
+   "reader_accuracy": 0.7492537313432835,
+   "reds_per_week": 0.0,
+   "tickets": 670,
+   "undetected": 10
+  }
+ },
+ "world": {
+  "changes": 511,
+  "dau": 500000,
+  "defects": 91,
+  "orgs": 3,
+  "releases": 72,
+  "seeds": [
+   4201,
+   4202,
+   4203
+  ],
+  "weeks": 12
+ }
+}

@@ -14,3 +14,7 @@
 instead of 10,315. A fixed risk ranking instead of the learned one: 11,626. No exploratory testing: 14,474, but
 €147 a week cheaper: exploratory time is the one part that costs more than the player value it saves, and it is
 kept because it halves the bugs players meet in layout and performance, which the price per player-day undervalues.
+
+**Held-out orgs (run once).** The covering matrix held up (12,281 player-days against 14,177 with the 7 most popular
+devices); the learned ranking did not: a fixed ranking found exactly the same defects. Keep the model, but treat
+its value as unproven until it has a few months of the team's history.
