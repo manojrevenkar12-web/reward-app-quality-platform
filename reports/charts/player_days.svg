@@ -3,11 +3,11 @@
 <text x="20" y="28" font-size="15" font-weight="600" fill="#1F2430">Player-days hit by escaped defects, per week</text>
 <text x="20" y="46" font-size="12" fill="#5E6573">Players a defect reached, times the days it reached them; 95% intervals over org-weeks</text>
 <text x="330" y="77" font-size="12" text-anchor="end" fill="#1F2430">As found</text>
-<rect x="340" y="67" width="195.1" height="14" rx="3" fill="#C2410C"/>
+<rect x="340" y="67" width="195.1" height="14" rx="3" fill="#eb6834"/>
 <line x1="443.4" x2="632.8" y1="74" y2="74" stroke="#1F2430" stroke-width="1.5"/>
 <text x="640.8" y="78" font-size="11" fill="#5E6573">124,973 </text>
 <text x="330" y="103" font-size="12" text-anchor="end" fill="#1F2430">Automate everything</text>
-<rect x="340" y="93" width="237.6" height="14" rx="3" fill="#7C3AED"/>
+<rect x="340" y="93" width="237.6" height="14" rx="3" fill="#1baf7a"/>
 <line x1="478.2" x2="692.4" y1="100" y2="100" stroke="#1F2430" stroke-width="1.5"/>
 <text x="700.4" y="104" font-size="11" fill="#5E6573">152,174 </text>
 <text x="330" y="129" font-size="12" text-anchor="end" fill="#1F2430">Platform, exploratory time by a fixed ranking, no learned risk</text>
@@ -51,7 +51,7 @@
 <line x1="355.4" x2="469.2" y1="360" y2="360" stroke="#1F2430" stroke-width="1.5"/>
 <text x="477.2" y="364" font-size="11" fill="#5E6573">39,460 </text>
 <text x="330" y="389" font-size="12" text-anchor="end" fill="#1F2430" font-weight="600">Platform</text>
-<rect x="340" y="379" width="16.1" height="14" rx="3" fill="#1D4ED8"/>
+<rect x="340" y="379" width="16.1" height="14" rx="3" fill="#2a78d6"/>
 <line x1="348.3" x2="365.0" y1="386" y2="386" stroke="#1F2430" stroke-width="1.5"/>
 <text x="373.0" y="390" font-size="11" fill="#5E6573">10,315 </text>
 </svg>

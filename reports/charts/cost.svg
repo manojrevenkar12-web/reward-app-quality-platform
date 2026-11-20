@@ -3,10 +3,10 @@
 <text x="20" y="28" font-size="15" font-weight="600" fill="#1F2430">Cost of quality per week</text>
 <text x="20" y="46" font-size="12" fill="#5E6573">Lost player value, QA and engineering time, device farm; same releases and players for every design</text>
 <text x="330" y="77" font-size="12" text-anchor="end" fill="#1F2430">As found</text>
-<rect x="340" y="67" width="352.4" height="14" rx="3" fill="#C2410C"/>
+<rect x="340" y="67" width="352.4" height="14" rx="3" fill="#eb6834"/>
 <text x="700.4" y="78" font-size="11" fill="#5E6573">€50,175 </text>
 <text x="330" y="103" font-size="12" text-anchor="end" fill="#1F2430">Automate everything</text>
-<rect x="340" y="93" width="333.7" height="14" rx="3" fill="#7C3AED"/>
+<rect x="340" y="93" width="333.7" height="14" rx="3" fill="#1baf7a"/>
 <text x="681.7" y="104" font-size="11" fill="#5E6573">€47,508 </text>
 <text x="330" y="129" font-size="12" text-anchor="end" fill="#1F2430">Platform, exploratory time by a fixed ranking, no learned risk</text>
 <rect x="340" y="119" width="22.0" height="14" rx="3" fill="#A3A9A6"/>
@@ -39,6 +39,6 @@
 <rect x="340" y="353" width="38.3" height="14" rx="3" fill="#A3A9A6"/>
 <text x="386.3" y="364" font-size="11" fill="#5E6573">€5,448 </text>
 <text x="330" y="389" font-size="12" text-anchor="end" fill="#1F2430" font-weight="600">Platform</text>
-<rect x="340" y="379" width="20.9" height="14" rx="3" fill="#1D4ED8"/>
+<rect x="340" y="379" width="20.9" height="14" rx="3" fill="#2a78d6"/>
 <text x="368.9" y="390" font-size="11" fill="#5E6573">€2,969 </text>
 </svg>

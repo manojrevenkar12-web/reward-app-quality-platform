@@ -91,7 +91,7 @@ class RewardsApiPactTest {
             PactDslJsonBody().stringValue("playerId", "p-1").integerType("coins", 200)
                 .minArrayLike("cashouts", 1)
                 .stringType("cashoutId", "c-1").stringType("status", "requested").integerType("amountCents", 100).integerType("coins", 200)
-                .closeObject()!!.closeArray(),
+                .closeObject()!!.closeArray()!!,
         )
         .toPact()
 
